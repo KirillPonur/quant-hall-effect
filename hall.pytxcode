@@ -1,5 +1,5 @@
 =>PYTHONTEX:SETTINGS#
-version=0.17dev
+version=0.16
 outputdir=pythontex-files-hall
 workingdir=.
 workingdirset=false
