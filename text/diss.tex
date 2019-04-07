@@ -1,4 +1,4 @@
-%!TEX root = ../six_pole.tex
+%!TEX root = ../hall.tex
 % Тип документа
 \documentclass[a4paper,12pt]{extarticle}
 
@@ -50,7 +50,7 @@
 \usepackage{pgfplots,pgfplotstable,booktabs,colortbl}
 \usepackage{xcolor}
 \usepackage{hyperref}
-
+\usepackage{pythontex}
  % Цвета для гиперссылок
 \definecolor{linkcolor}{HTML}{000000} % цвет ссылок
 \definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
@@ -81,6 +81,20 @@
 % 	}
 % Среднее <#1>
 \newcommand{\mean}[1]{\langle#1\rangle}
+
+\begin{pycode}
+##
+def frexp10(decimal):
+	parts = ('%e' % decimal).split('e')
+	return float(parts[0]), int(parts[1])
+##
+\end{pycode}
+% Функция для тех, кто использует pythontex. Представляет любое вещественное число в стандартном виде.
+\newcommand{\frexp}[1]{
+		\pyc{#10=frexp10(#1)} 
+			\py{ round(#10[0],2)} 
+				\cdot 10^{\py{#10[1]}} }
+
 % const прямым шрифтом
 \newcommand\ct[1]{\text{\rmfamily\upshape #1}}
 \newcommand*{\const}{\ct{const}}

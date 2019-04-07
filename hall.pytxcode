@@ -1,5 +1,131 @@
+=>PYTHONTEX#py#default#default#0#code#####85#
+##
+def frexp10(decimal):
+	parts = ('%e' % decimal).split('e')
+	return float(parts[0]), int(parts[1])
+##
+=>PYTHONTEX#py#default#default#1#code#####569#
+##
+R=3.07
+l,d,b=22e-3,3.5e-3,0.38e-3
+rho=R*l/(d*b)
+sigma=(1/rho)%10
+##
+=>PYTHONTEX#py#default#default#2#i#####579#
+round(rho,1)
+=>PYTHONTEX#py#default#default#3#c#####583#
+sigma0=frexp10(sigma)
+=>PYTHONTEX#py#default#default#4#i#####583#
+ round(sigma0[0],2)
+=>PYTHONTEX#py#default#default#5#i#####583#
+sigma0[1]
+=>PYTHONTEX#py#default#default#6#code#####614#
+##
+from numpy import mean,array
+R1=2.18*10**(-11)
+R2=2.12*10**(-11)
+R4=2.03*10**(-11)
+R7=2.89*10**(-11)
+R200= 1.88*10**(-11)
+R400= 2.18*10**(-11)
+R600= 1.93*10**(-11)
+R900= 1.93*10**(-11)
+R=array([R1,R2,R4,R7,R200,R400,R600,R900])
+##
+=>PYTHONTEX#py#default#default#7#c#####630#
+R10=frexp10(R1)
+=>PYTHONTEX#py#default#default#8#i#####630#
+ round(R10[0],2)
+=>PYTHONTEX#py#default#default#9#i#####630#
+R10[1]
+=>PYTHONTEX#py#default#default#10#c#####631#
+R20=frexp10(R2)
+=>PYTHONTEX#py#default#default#11#i#####631#
+ round(R20[0],2)
+=>PYTHONTEX#py#default#default#12#i#####631#
+R20[1]
+=>PYTHONTEX#py#default#default#13#c#####632#
+R40=frexp10(R4)
+=>PYTHONTEX#py#default#default#14#i#####632#
+ round(R40[0],2)
+=>PYTHONTEX#py#default#default#15#i#####632#
+R40[1]
+=>PYTHONTEX#py#default#default#16#c#####633#
+R70=frexp10(R7)
+=>PYTHONTEX#py#default#default#17#i#####633#
+ round(R70[0],2)
+=>PYTHONTEX#py#default#default#18#i#####633#
+R70[1]
+=>PYTHONTEX#py#default#default#19#c#####639#
+R2000=frexp10(R200)
+=>PYTHONTEX#py#default#default#20#i#####639#
+ round(R2000[0],2)
+=>PYTHONTEX#py#default#default#21#i#####639#
+R2000[1]
+=>PYTHONTEX#py#default#default#22#c#####640#
+R4000=frexp10(R400)
+=>PYTHONTEX#py#default#default#23#i#####640#
+ round(R4000[0],2)
+=>PYTHONTEX#py#default#default#24#i#####640#
+R4000[1]
+=>PYTHONTEX#py#default#default#25#c#####641#
+R6000=frexp10(R600)
+=>PYTHONTEX#py#default#default#26#i#####641#
+ round(R6000[0],2)
+=>PYTHONTEX#py#default#default#27#i#####641#
+R6000[1]
+=>PYTHONTEX#py#default#default#28#c#####642#
+R9000=frexp10(R900)
+=>PYTHONTEX#py#default#default#29#i#####642#
+ round(R9000[0],2)
+=>PYTHONTEX#py#default#default#30#i#####642#
+R9000[1]
+=>PYTHONTEX#py#default#default#31#code#####650#
+##
+mu=mean(sigma*R)
+mu0=frexp10(mu)
+##
+=>PYTHONTEX#py#default#default#32#c#####657#
+mu0=frexp10(mu)
+=>PYTHONTEX#py#default#default#33#i#####657#
+ round(mu0[0],2)
+=>PYTHONTEX#py#default#default#34#i#####657#
+mu0[1]
+=>PYTHONTEX#py#default#default#35#code#####661#
+##
+from numpy import pi
+A=3*pi/8
+e=1.60217662e-19
+n=A/mean(R)/e
+n0=frexp10(n)
+R0=frexp10(mean(R))
+##
+=>PYTHONTEX#py#default#default#36#c#####673#
+n0=frexp10(n)
+=>PYTHONTEX#py#default#default#37#i#####673#
+ round(n0[0],2)
+=>PYTHONTEX#py#default#default#38#i#####673#
+n0[1]
+=>PYTHONTEX#py#default#default#39#c#####694#
+n0=frexp10(n)
+=>PYTHONTEX#py#default#default#40#i#####694#
+ round(n0[0],2)
+=>PYTHONTEX#py#default#default#41#i#####694#
+n0[1]
+=>PYTHONTEX#py#default#default#42#c#####695#
+mu0=frexp10(mu)
+=>PYTHONTEX#py#default#default#43#i#####695#
+ round(mu0[0],2)
+=>PYTHONTEX#py#default#default#44#i#####695#
+mu0[1]
+=>PYTHONTEX#py#default#default#45#c#####696#
+sigma0=frexp10(sigma)
+=>PYTHONTEX#py#default#default#46#i#####696#
+ round(sigma0[0],2)
+=>PYTHONTEX#py#default#default#47#i#####696#
+sigma0[1]
 =>PYTHONTEX:SETTINGS#
-version=0.16
+version=0.17dev
 outputdir=pythontex-files-hall
 workingdir=.
 workingdirset=false
