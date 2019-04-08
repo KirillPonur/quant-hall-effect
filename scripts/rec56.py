@@ -27,15 +27,10 @@ b=3.5/1000
 sheet_name='5.6, B=200'
 df=read(rec, sheet_name=sheet_name)
 
-def frexp10(decimal):
-   parts = ('%e' % decimal).split('e')
-   return float(parts[0]), int(parts[1])
-# figure(sheet_name)
 x=array(df['I'])/1000 # В Амперах 
 y=array(df['E']) # В Вольтах
 g = polyfit(x,y,1,w=1/error(x))
 y=poly1d(g)
-print(frexp10(0.2*10e-2)[0])
 print('Для B=200 Гс',(g[0]*b/200/10**4))
 x=linspace(0,x[-1],100)
 

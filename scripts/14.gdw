@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.26.0.20</version>
+  <WSversion>10</WSversion>
+  <File>
+    <Name>D:\Labs\quant-hall-effect\fig\14.jpg</Name>
+    <Width>1922</Width>
+    <Height>1390</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>248,248,248</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3594,6619,3650,6574,3705,6527,3758,6478,3810,6429,3864,6381,3920,6335,3975,6288,4031,6242,4087,6197</Points>
+    <Points MF="9">4140,6150,4192,6102,4246,6054,4300,6007,4354,5959,4407,5910,4460,5862,4513,5815,4564,5766,4616,5717</Points>
+    <Points MF="9">4670,5670,4725,5624,4780,5577,4832,5527,4883,5477,4935,5428,4988,5380,5042,5333,5098,5287,5152,5240</Points>
+    <Points MF="9">5206,5194,5263,5152,5320,5109,5373,5062,5425,5013,5480,4966,5536,4921,5591,4876,5646,4830,5699,4782</Points>
+    <Points MF="9">5749,4731,5799,4680,5854,4634,5912,4593,5969,4552,6024,4507,6076,4458,6128,4409,6179,4359,6229,4308</Points>
+    <Points MF="9">6284,4263,6344,4225,6399,4184,3383,6805,3355,6870,3325,6934,3302,6999,3294,7068,3297,7140,3299,7211</Points>
+    <Points MF="9">3295,7281,3293,7353,3301,7425,6878,3793,6929,3743,6979,3692,7032,3643,7088,3598,7145,3555,7202,3510</Points>
+    <Points MF="9">7258,3464,7312,3417,7368,3371,7426,3328,7486,3289,7547,3251,7608,3213,7670,3177,7734,3143,7797,3109</Points>
+    <Points MF="9">7860,3072,7924,3035,7990,3014,6830,3845,6782,3895,6726,3939,8373,2945,8445,2949,8513,2966,8579,2979</Points>
+    <Points MF="9">8646,2983,8716,2988,8787,2999,8854,3020,8919,3050,8984,3080,9051,3104,9120,3125,9188,3145,9257,3164</Points>
+    <Points MF="9">9325,3187,9394,3209,9463,3227,9528,3250,9591,3278,9653,3311,9713,3352,9773,3390,9836,3404,9903,3398</Points>
+    <Points MF="9">9971,3394,10040,3402,10110,3417,10180,3436,10248,3456,10317,3477,10385,3501,10453,3525,10522,3549,10590,3572</Points>
+    <Points MF="9">10660,3591,10730,3608,10800,3624,10870,3641,10940,3658,11012,3668,11087,3674,11151,3696,11184,3760,13042,3788</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">3307,9391,1.000000e+002</Xmin>
+  <Xmax MF="9">13162,9301,1.000000e+005</Xmax>
+  <Ymin MF="9">3298,9382,1.000000e+005</Ymin>
+  <Ymax MF="9">3262,1138,1.000000e+008</Ymax>
+  <XScale>logarithmic</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>320,-8</Position>
+  <Zoom>
+    <Scale>90.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>1</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>5.000000</dx>
+    <dy>5.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>

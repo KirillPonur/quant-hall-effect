@@ -41,43 +41,41 @@ print(error(10))
 
 
 df=read(rec, sheet_name='5.4, I=1mA')
-x=array(df['I'])*773/10e4 # В Тл
+x=array(df['I'])*773/1e4 # В Тл
 y=array(df['E']) # В Вольтах
 g = polyfit(x,y,1)
-R1=g[0]*b/(1*10e-3)
+print(g[0])
+R1=g[0]*b/(1e-3)
 print('Для I=1mA',R1)
 
 
 
 
 df=read(rec, sheet_name='5.4, I=2mA')
-x=array(df['I'])*773/10e4 # В Тл
+x=array(df['I'])*773/1e4 # В Тл
 y=array(df['E']) # В Вольтах
 g = polyfit(x,y,1)
-R2=g[0]*b/(2*10e-3)
+R2=g[0]*b/(2e-3)
 print('Для I=2mA',R2)
 
 
 
 df=read(rec, sheet_name='5.4, I=4mA')
-x=array(df['I'])*773/10e4 # В Тл
+x=array(df['I'])*773/1e4 # В Тл
 y=array(df['E']) # В Вольтах
 g = polyfit(x,y,1)
-R4=g[0]*b/(4*10e-3)
+R4=g[0]*b/(4e-3)
 print('Для I=4mA',R4)
 
 
 
 
 df=read(rec, sheet_name='5.4, I=7mA')
-x=array(df['I'])*773/10e4 # В Тл
+x=array(df['I'])*773/1e4 # В Тл
 y=array(df['E']) # В Вольтах
 g = polyfit(x,y,1)
-R7=g[0]*b/(7*10e-3)
+R7=g[0]*b/(7e-3)
 print('Для I=7mA',R7)
-
-
-
 sheet_name='5.6, B=200'
 df=read(rec, sheet_name=sheet_name)
 x=array(df['I'])/1000 # В Амперах 
